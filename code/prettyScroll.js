@@ -18,7 +18,7 @@ window.onmousemove = e => {
 
     track.style.transform = `translate(${nextPercentage}%, -50%)`;
 
-    for (const image of track.getElementsByClassName("image")) {
+    for (const image of track.getElementsByClassName("proyects__image")) {
         track.animate({
             transform: `translate(${nextPercentage}%, -50%)`
         }, { duration: 1200, fill: "forwards" });

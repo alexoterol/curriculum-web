@@ -7,110 +7,155 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 <body>
-
     <!-- HEADER SECTION -->
-    <header class="header" id="particles-js">
+    <header class="header header--particles" id="particles-js">
         <div class="header__layout">
             <div class="header__name">
                 <p>
-                    <span class="color-change">A</span>
-                    <span class="color-change">L</span>
-                    <span class="color-change">E</span>
-                    <span class="color-change">X</span>
-                    <span class="color-change">O</span>
-                    <span class="color-change">T</span>
-                    <span class="color-change">E</span>
-                    <span class="color-change">R</span>
-                    <span class="color-change">O</span>
+                    <span class="header__letter">A</span>
+                    <span class="header__letter">L</span>
+                    <span class="header__letter">E</span>
+                    <span class="header__letter">X</span>
+                    <span class="header__letter">O</span>
+                    <span class="header__letter">T</span>
+                    <span class="header__letter">E</span>
+                    <span class="header__letter">R</span>
+                    <span class="header__letter">O</span>
                 </p>
             </div>
             <div class="header__description">
                 <div>I enjoy creating systems...</div>
             </div>
             <div class="header__image">
-                <img src="img/IMG_0792.jpg" alt="Tu Imagen" />
+                <img src="img/IMG_0792.jpg" alt="Tu Imagen" class="header__image-img"/>
             </div>
         </div>
     </header>
+
     <!-- NAV SECTION -->
-    <nav class="sticky-nav">
-        <ul>
-            <li><a href="#proyects">Projects</a></li>
-            <li><a href="#info">About me</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-            <li><a href="#footer">Policy</a></li>
+    <nav class="nav nav--sticky">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#proyects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#info" class="nav__link">About me</a></li>
+            <li class="nav__item"><a href="#contact-me" class="nav__link">Contact Me</a></li>
+            <li class="nav__item"><a href="#footer" class="nav__link">Policy</a></li>
         </ul>
     </nav>
 
     <main>
-        <!-- PROYECT SECTION -->
-        <section id="proyects">
-            <div>
-                <h2>Proyects</h1>
+        <!-- PROJECT SECTION -->
+        <section id="proyects" class="proyects">
+            <div class="proyects__header">
+                <h2 class="proyects__title">Proyects</h2>
             </div>
-            <div class="container">
-                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-                    <div>
-                        <img class="image" src="https://i.pinimg.com/enabled/564x/34/f0/2b/34f02beaf9368e004eccf1ece19218a4.jpg" draggable="false" alt="">
-                        <p>Proyect A</p>
+            <div class="proyects__container">
+                <div class="proyects__image-track" id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                    <div class="proyects__item">
+                        <img class="proyects__image" src="img/DatabaseTiktakToe.png" draggable="false" alt=""/>
+                        <p class="proyects__description">TikTakToe with database system</p>
+                        <p class="proyects__tech">Java, SQL</p>
                     </div>
-                    <div>
-                        <img class="image" src="https://i.pinimg.com/enabled/564x/07/81/ad/0781ad88333a394238563e8899683489.jpg" draggable="false" alt="">
-                        <p>Proyect B</p>
+                    <div class="proyects__item">
+                        <img class="proyects__image" src="img/SnakeC.png" draggable="false" alt=""/>
+                        <p class="proyects__description">Snake Game</p>
+                        <p class="proyects__tech">C</p>
                     </div>
-                    <div>
-                        <img class="image" src="https://i.pinimg.com/736x/5a/71/c4/5a71c4d6be2e66f4935503b990e928ae.jpg" draggable="false" alt="">
-                        <p>Proyect C</p>
+                    <div class="proyects__item">
+                        <img class="proyects__image" src="img/ArrithmIA.png" draggable="false" alt=""/>
+                        <p class="proyects__description">Arrythmia detector with IA</p>
+                        <p class="proyects__tech">Python, Tensorflow, ...</p>
                     </div>
-                    <div>
-                        <img class="image" src="https://i.pinimg.com/736x/26/c5/bd/26c5bdaa23360751a5553a5e2c78aa73.jpg" draggable="false" alt="">
-                        <p>Proyect D</p>
+                    <div class="proyects__item">
+                        <img class="proyects__image" src="img/20QUESTIONS.jpg" draggable="false" alt=""/>
+                        <p class="proyects__description">20 Questions Game</p>
+                        <p class="proyects__tech">Java, JavaFX</p>
                     </div>
-                    <div>
-                        <img class="image" src="https://i.pinimg.com/enabled/564x/f7/06/7e/f7067e93b683753d51a616b9c2a1e853.jpg" draggable="false" alt="">
-                        <p>Proyect E</p>
+                    <div class="proyects__item">
+                        <img class="proyects__image" src="img/chatbot.png" draggable="false" alt=""/>
+                        <p class="proyects__description">Chatbot Web</p>
+                        <p class="proyects__tech">GeminiAPI, CSS, HTML, JS</p>
                     </div>
-
-                    <div>
-                        <img class="image" src="https://i.pinimg.com/enabled/564x/b0/d5/bb/b0d5bb81f6601baaccd22668e97af673.jpg" draggable="false" alt="">
-                        <p>Proyect G</p>
+                    <div class="proyects__item">
+                        <img class="proyects__image" src="img/SCHEDULE.png" draggable="false" alt=""/>
+                        <p class="proyects__description">Schedule Program</p>
+                        <p class="proyects__tech">Java, ...</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="colaborations" class="colaborations">
+            <div class="colaborations__content">
+                blokkk xd
+            </div>
+        </section>
+
         <!-- ABOUT ME SECTION -->
-        <section id="info">
-            <div>
-                <h2>About me</h2>
-                <p>Something blah blah</p>
-                <div class="about-content">
-                    <img src="" alt="">
-                    <p>aditional info...</p>
+        <section id="info" class="info">
+            <div class="info__header">
+                <h2 class="info__title">A system is all you need to free time to focus on things that matter most</h2>
+            </div>
+            <div class="info__container">
+                <div class="info__card info__card--professional">
+                    <img src="img/profesional.jpg" alt="" class="info__card-img">
+                    <div class="info__card-content">
+                        <p class="info__card-role">Professional</p>
+                        <p class="info__card-description">Increase your productivity at work using a program which automatizes processes.</p>
+                    </div>
+                </div>
+                <div class="info__card info__card--finance">
+                    <img src="img/DINERO.jpg" alt="" class="info__card-img">
+                    <div class="info__card-content">
+                        <p class="info__card-role">Money and finances</p>
+                        <p class="info__card-description">Make more money and spend less due to the systems you are going to build for your interests.</p>
+                    </div>
+                </div>
+                <div class="info__card info__card--personal">
+                    <img src="img/personal.jpg" alt="" class="info__card-img">
+                    <div class="info__card-content">
+                        <p class="info__card-role">Personal</p>
+                        <p class="info__card-description">Build up free time to acquire personal growth and be more successful.</p>
+                    </div>
+                </div>
+                <div class="info__card info__card--relationships">
+                    <img src="img/relationships.jpg" alt="" class="info__card-img">
+                    <div class="info__card-content">
+                        <p class="info__card-role">Relationships</p>
+                        <p class="info__card-description">Increase the quality of your relationships investing more time with people you care about.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- CONTACT ME SECTION -->
-        <section id="contact-me">
-            <div>
-                <h2>Contact Me</h2>
-                <form id="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <button type="submit">Submit</button>
+        <section class="form-container" id="contact-me">
+            <div class="form-container__card">
+                <form class="form">
+                    <label for="full-name" class="form__label">Name:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="McLovin Morales" class="form__input" required>
+                    
+                    <label for="email" class="form__label">E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="abc@mail.com" class="form__input" required>
+                    
+                    <button type="submit" class="form__button">Submit</button>
                 </form>
             </div>
         </section>
     </main>
+
     <!-- FOOTER SECTION -->
-    <footer>
-        <div>
-            Alex Otero C
+    <footer class="footer" id="footer">
+        <div class="footer__logo">
+            <h2 class="footer__title">Alex Otero Limones</h2>
+            <p class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </div>
+        <div class="footer__nav">
+
+        </div>
+        <div class="footer__info">
+            <p class="footer__info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+            <p class="footer__info-text">&copy; 2024 Alex Otero Limones.</p>
         </div>
     </footer>
 
